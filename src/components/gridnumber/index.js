@@ -9,8 +9,8 @@ export const isMultipleOfSelectdNumber = (number) => {
 };
 
 // Get grid display
-const getGridNumber = () => {
-  const GridNumber = `
+const getGridNumberList = () => {
+  const gridNumberList = `
     <ul class='grid-number'>
     ${allNumbers
       .map((number) => {
@@ -22,13 +22,13 @@ const getGridNumber = () => {
     </ul>
   `;
 
-  return GridNumber;
+  return gridNumberList;
 };
 
 // Render grid number
 const renderGridNumber = () => {
   const rootElement = document.getElementById("grid-number");
-  rootElement.innerHTML = getGridNumber();
+  rootElement.innerHTML = getGridNumberList();
 };
 
 // On selecting each number in grid
