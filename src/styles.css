@@ -6,6 +6,10 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
+
+/**
+Mobile first
+*/
 .grid-number li {
   flex: 1 1 100%;
   list-style-type: none;
@@ -19,4 +23,23 @@ body {
 
 .grid-number .active {
   background: blue;
+}
+
+/**
+Tablets
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  .grid-number li {
+    flex: 1 1 45%;
+  }
+}
+
+/**
+Desktop and large devices
+*/
+
+@media (min-width: 1025px) {
+  .grid-number li {
+    flex: 1 1 29%;
+  }
 }
