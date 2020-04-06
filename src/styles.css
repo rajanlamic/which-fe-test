@@ -1,3 +1,22 @@
 body {
   color: red;
 }
+
+.grid-number {
+  display: flex;
+  flex-wrap: wrap;
+}
+.grid-number li {
+  flex: 1 1 100%;
+  list-style-type: none;
+  height: 20px;
+  background: lightblue;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.grid-number .active {
+  background: blue;
+}
